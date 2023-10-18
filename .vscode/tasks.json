@@ -1,0 +1,8 @@
+{
+    "command": "dotnet",
+    "args": [
+        "build",
+        "${workspaceFolder}/Scripts/MyProject.csproj"
+    ]
+}
+    

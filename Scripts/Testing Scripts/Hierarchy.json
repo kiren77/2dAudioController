@@ -1,0 +1,519 @@
+{
+    "diagram":{
+       "id":"diagram1",
+       "name":"Biomes and Sound Assets",
+       "diagram_data":{
+          "biomes":[
+             {
+                "name":"Forests",
+                "subcategories":[
+                   {
+                      "name":"Enchanted Forest",
+                      "sound_assets":[
+                         {
+                            "name":"Birdsong"
+                         },
+                         {
+                            "name":"Wind Chimes"
+                         },
+                         {
+                            "name":"Waterfall"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Dark Forest",
+                      "sound_assets":[
+                         {
+                            "name":"Owls"
+                         },
+                         {
+                            "name":"Bats"
+                         },
+                         {
+                            "name":"Crickets"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Pine Forest",
+                      "sound_assets":[
+                         {
+                            "name":"Pine Needles Rustling"
+                         },
+                         {
+                            "name":"Wind Blowing Through Trees"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Autumn Forest",
+                      "sound_assets":[
+                         {
+                            "name":"Leaves Crunching"
+                         },
+                         {
+                            "name":"Squirrels Chirping"
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "name":"Mountains",
+                "subcategories":[
+                   {
+                      "name":"Snow-Capped Peaks",
+                      "sound_assets":[
+                         {
+                            "name":"Avalanches"
+                         },
+                         {
+                            "name":"Ice Cracking"
+                         },
+                         {
+                            "name":"Wind Howling"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Volcanic Mountains",
+                      "sound_assets":[
+                         {
+                            "name":"Lava Flowing"
+                         },
+                         {
+                            "name":"Rocks Crashing"
+                         },
+                         {
+                            "name":"Steam Rising"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Rocky Mountains",
+                      "sound_assets":[
+                         {
+                            "name":"Rocks Rolling Downhill"
+                         },
+                         {
+                            "name":"Birdsong"
+                         },
+                         {
+                            "name":"Wind Chimes"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Misty Mountains",
+                      "sound_assets":[
+                         {
+                            "name":"Waterfalls"
+                         },
+                         {
+                            "name":"Birdsong"
+                         },
+                         {
+                            "name":"Wind Chimes"
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "name":"Deserts",
+                "subcategories":[
+                   {
+                      "name":"Sandy Desert",
+                      "sound_assets":[
+                         {
+                            "name":"Wind Blowing"
+                         },
+                         {
+                            "name":"Sand Dunes Shifting"
+                         },
+                         {
+                            "name":"Camels Droning"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Rocky Desert",
+                      "sound_assets":[
+                         {
+                            "name":"Rocks Crashing"
+                         },
+                         {
+                            "name":"Wind Howling"
+                         },
+                         {
+                            "name":"Coyotes Howling"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Oasis Desert",
+                      "sound_assets":[
+                         {
+                            "name":"Birdsong"
+                         },
+                         {
+                            "name":"Wind Chimes"
+                         },
+                         {
+                            "name":"Water Trickling"
+                         }
+                      ]
+                   },
+                   {
+                      "name":"Salt Flats",
+                      "sound_assets":[
+                         {
+                            "name":"Wind Blowing"
+                         },
+                         {
+                            "name":"Salt Crystals Crunching"
+                         }
+                      ]
+                   }
+                },
+                {
+                   "name":"Swamps",
+                   "subcategories":[
+                      {
+                         "name":"Murky Swamp",
+                         "sound_assets":[
+                            {
+                               "name":"Frogs Croaking"
+                            },
+                            {
+                               "name":"Mosquitoes Buzzing"
+                            },
+                            {
+                               "name":"Alligator Swamp"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Foggy Swamp",
+                         "sound_assets":[
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Wind Chimes"
+                            },
+                            {
+                               "name":"Water Dripping"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Mangrove Swamp",
+                         "sound_assets":[
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Wind Chimes"
+                            },
+                            {
+                               "name":"Water Dripping"
+                            }
+                         ]
+                      }
+                   ]
+                },
+                {
+                   "name":"Plains",
+                   "subcategories":[
+                      {
+                         "name":"Grassy Plains",
+                         "sound_assets":[
+                            {
+                               "name":"Wind Blowing"
+                            },
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Insects Chirping"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Barren Plains",
+                         "sound_assets":[
+                            {
+                               "name":"Wind Blowing"
+                            },
+                            {
+                               "name":"Rocks Crashing"
+                            },
+                            {
+                               "name":"Coyotes Howling"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Flower Meadows",
+                         "sound_assets":[
+                            {
+                               "name":"Insects Chirping"
+                            },
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Butterflies Fluttering"
+                            }
+                         ]
+                      }
+                   ]
+                },
+                {
+                   "name":"Jungles",
+                   "subcategories":[
+                      {
+                         "name":"Dense Jungle",
+                         "sound_assets":[
+                            {
+                               "name":"Monkeys Chattering"
+                            },
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Insects Chirping"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Tropical Jungle",
+                         "sound_assets":[
+                            {
+                               "name":"Monkeys Chattering"
+                            },
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Insects Chirping"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Rainforest",
+                         "sound_assets":[
+                            {
+                               "name":"Monkeys Chattering"
+                            },
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Insects Chirping"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Bamboo Forest",
+                         "sound_assets":[
+                            {
+                               "name":"Wind Blowing"
+                            },
+                            {
+                               "name":"Bamboo Cracking"
+                            },
+                            {
+                               "name":"Birdsong"
+                            }
+                         ]
+                      }
+                   ]
+                },
+                {
+                   "name":"Tundras",
+                   "subcategories":[
+                      {
+                         "name":"Icy Tundra",
+                         "sound_assets":[
+                            {
+                               "name":"Wind Howling"
+                            },
+                            {
+                               "name":"Ice Cracking"
+                            },
+                            {
+                               "name":"Wolves Howling"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Snowy Tundra",
+                         "sound_assets":[
+                            {
+                               "name":"Wind Howling"
+                            },
+                            {
+                               "name":"Snow Falling"
+                            },
+                            {
+                               "name":"Caribou Sniffing"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Arctic Tundra",
+                         "sound_assets":[
+                            {
+                               "name":"Wind Howling"
+                            },
+                            {
+                               "name":"Ice Cracking"
+                            },
+                            {
+                               "name":"Polar Bears Roaring"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Alpine Tundra",
+                         "sound_assets":[
+                            {
+                               "name":"Wind Howling"
+                            },
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Insects Chirping"
+                            }
+                         ]
+                      }
+                   ]
+                },
+                {
+                   "name":"Islands",
+                   "subcategories":[
+                      {
+                         "name":"Tropical Island",
+                         "sound_assets":[
+                            {
+                               "name":"Waves Crashing"
+                            },
+                            {
+                               "name":"Birdsong"
+                            },
+                            {
+                               "name":"Insects Chirping"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Deserted Island",
+                         "sound_assets":[
+                            {
+                               "name":"Waves Crashing"
+                            },
+                            {
+                               "name":"Seagulls Screaming"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Volcanic Island",
+                         "sound_assets":[
+                            {
+                               "name":"Lava Flowing"
+                            },
+                            {
+                               "name":"Rocks Crashing"
+                            },
+                            {
+                               "name":"Steam Rising"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Coral Island",
+                         "sound_assets":[
+                            {
+                               "name":"Waves Crashing"
+                            },
+                            {
+                               "name":"Fish Swimming"
+                            },
+                            {
+                               "name":"Birdsong"
+                            }
+                         ]
+                      }
+                   ]
+                },
+                {
+                   "name":"Oceans",
+                   "subcategories":[
+                      {
+                         "name":"Deep Ocean",
+                         "sound_assets":[
+                            {
+                               "name":"Whales Singing"
+                            },
+                            {
+                               "name":"Dolphins Whistling"
+                            },
+                            {
+                               "name":"Fish Swimming"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Shallow Ocean",
+                         "sound_assets":[
+                            {
+                               "name":"Waves Crashing"
+                            },
+                            {
+                               "name":"Fish Swimming"
+                            },
+                            {
+                               "name":"Birdsong"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Coral Reef",
+                         "sound_assets":[
+                            {
+                               "name":"Waves Crashing"
+                            },
+                            {
+                               "name":"Fish Swimming"
+                            },
+                            {
+                               "name":"Coral Growing"
+                            }
+                         ]
+                      },
+                      {
+                         "name":"Kelp Forest",
+                         "sound_assets":[
+                            {
+                               "name":"Waves Crashing"
+                            },
+                            {
+                               "name":"Fish Swimming"
+                            },
+                            {
+                               "name":"Kelp Rustling"
+                            }
+                         ]
+                      }
+                   ]
+                }
+             ]
+          }
+       }
+    }
+ }

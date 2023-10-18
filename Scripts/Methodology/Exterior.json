@@ -1,0 +1,294 @@
+{
+  "Biomes": [
+    "Forests",
+    "Mountains",
+    "Deserts",
+    "Swamps",
+    "Plains",
+    "Jungles",
+    "Tundras",
+    "Islands",
+    "Oceans",
+    "Rivers"
+  ],
+  "SoundAssets": [
+    "Enchanted Forest",
+    "Dark Forest",
+    "Pine Forest",
+    "Autumn Forest",
+    "Snow-Capped Peaks",
+    "Volcanic Mountains",
+    "Rocky Mountains",
+    "Misty Mountains",
+    "Sandy Desert",
+    "Rocky Desert",
+    "Oasis Desert",
+    "Salt Flats",
+    "Murky Swamp",
+    "Foggy Swamp",
+    "Alligator Swamp",
+    "Mangrove Swamp",
+    "Grassy Plains",
+    "Barren Plains",
+    "Flower Meadows",
+    "Savannas",
+    "Dense Jungle",
+    "Tropical Jungle",
+    "Rainforest",
+    "Bamboo Forest",
+    "Icy Tundra",
+    "Snowy Tundra",
+    "Arctic Tundra",
+    "Alpine Tundra",
+    "Tropical Island",
+    "Deserted Island",
+    "Volcanic Island",
+    "Coral Island",
+    "Deep Ocean",
+    "Shallow Ocean",
+    "Coral Reef",
+    "Kelp Forest",
+    "Raging River",
+    "Calm River",
+    "Mountain Stream",
+    "Delta River"
+  ],
+  "Interrelationships": [
+    [
+      "Enchanted Forest",
+      "Birdsong",
+      "Wind Chimes",
+      "Waterfall"
+    ],
+    [
+      "Dark Forest",
+      "Owls",
+      "Bats",
+      "Crickets"
+    ],
+    [
+      "Pine Forest",
+      "Pine Needles Rustling",
+      "Wind Blowing Through Trees"
+    ],
+    [
+      "Autumn Forest",
+      "Leaves Crunching",
+      "Squirrels Chirping"
+    ],
+    [
+      "Snow-Capped Peaks",
+      "Avalanches",
+      "Ice Cracking",
+      "Wind Howling"
+    ],
+    [
+      "Volcanic Mountains",
+      "Lava Flowing",
+      "Rocks Crashing",
+      "Steam Rising"
+    ],
+    [
+      "Rocky Mountains",
+      "Rocks Rolling Downhill",
+      "Birdsong",
+      "Wind Chimes"
+    ],
+    [
+      "Misty Mountains",
+      "Waterfalls",
+      "Birdsong",
+      "Wind Chimes"
+    ],
+    [
+      "Sandy Desert",
+      "Wind Blowing",
+      "Sand Dunes Shifting",
+      "Camels Droning"
+    ],
+    [
+      "Rocky Desert",
+      "Rocks Crashing",
+      "Wind Howling",
+      "Coyotes Howling"
+    ],
+    [
+      "Oasis Desert",
+      "Birdsong",
+      "Wind Chimes",
+      "Water Trickling"
+    ],
+    [
+      "Salt Flats",
+      "Wind Blowing",
+      "Salt Crystals Crunching"
+    ],
+    [
+      "Murky Swamp",
+      "Frogs Croaking",
+      "Mosquitoes Buzzing",
+      "Alligators Hissing"
+    ],
+    [
+      "Foggy Swamp",
+      "Birdsong",
+      "Wind Chimes",
+      "Water Dripping"
+    ],
+    [
+      "Alligator Swamp",
+      "Alligators Hissing",
+      "Frogs Croaking",
+      "Mosquitoes Buzzing"
+    ],
+    [
+      "Mangrove Swamp",
+      "Birdsong",
+      "Wind Chimes",
+      "Water Dripping"
+    ],
+    [
+      "Grassy Plains",
+      "Wind Blowing",
+      "Birdsong",
+      "Insects Chirping"
+    ],
+    [
+      "Barren Plains",
+      "Wind Blowing",
+      "Rocks Crashing",
+      "Coyotes Howling"
+    ],
+    [
+      "Flower Meadows",
+      "Insects Chirping",
+      "Birdsong",
+      "Butterflies Fluttering
+    ],
+    [
+      "Savannas",
+      "Lions Roaring",
+      "Elephants Trumpeting",
+      "Birdsong"
+    ],
+    [
+      "Dense Jungle",
+      "Monkeys Chattering",
+      "Birdsong",
+      "Insects Chirping"
+    ],
+    [
+      "Tropical Jungle",
+      "Monkeys Chattering",
+      "Birdsong",
+      "Insects Chirping"
+    ],
+    [
+      "Rainforest",
+      "Monkeys Chattering",
+      "Birdsong",
+      "Insects Chirping"
+    ],
+    [
+      "Bamboo Forest",
+      "Wind Blowing",
+      "Bamboo Cracking",
+      "Birdsong"
+    ],
+    [
+      "Icy Tundra",
+      "Wind Howling",
+      "Ice Cracking",
+      "Wolves Howling"
+    ],
+    [
+      "Snowy Tundra",
+      "Wind Howling",
+      "Snow Falling",
+      "Caribou Sniffing"
+    ],
+    [
+      "Arctic Tundra",
+      "Wind Howling",
+      "Ice Cracking",
+      "Polar Bears Roaring"
+    ],
+    [
+      "Alpine Tundra",
+      "Wind Howling",
+      "Birdsong",
+      "Insects Chirping"
+    ],
+    [
+      "Tropical Island",
+      "Waves Crashing",
+      "Birdsong",
+      "Insects Chirping"
+    ],
+    [
+      "Deserted Island",
+      "Waves Crashing",
+      "Seagulls Screaming"
+    ],
+    [
+      "Volcanic Island",
+      "Lava Flowing",
+      "Rocks Crashing",
+      "Steam Rising"
+    ],
+    [
+      "Coral Island",
+      "Waves Crashing",
+      "Fish Swimming",
+      "Birdsong"
+    ],
+    [
+      "Deep Ocean",
+      "Whales Singing",
+      "Dolphins Whistling",
+      "Fish Swimming"
+    ],
+    [
+      "Shallow Ocean",
+      "Waves Crashing",
+      "Fish Swimming",
+      "Birdsong"
+    ],
+    [
+      "Coral Reef",
+      "Waves Crashing",
+      "Fish Swimming",
+      "Coral Growing"
+    ],
+    [
+      "Kelp Forest",
+      "Waves Crashing",
+      "Fish Swimming",
+      "Kelp Waving"
+    ],
+    [
+      "Raging River",
+      "Water Rushing",
+      "Rocks Crashing",
+      "Birdsong"
+    ],
+    [
+      "Calm River",
+      "Water Trickling",
+      "Birdsong",
+      "Insects Chirping"
+    ],
+    [
+      "Mountain Stream",
+      "Water Rushing",
+      "Rocks Crashing",
+      "Birdsong"
+    ],
+    [
+      "Delta River",
+      "Water Trickling",
+      "Birdsong",
+      "Insects Chirping"
+    ]
+  }
+}
