@@ -22,5 +22,6 @@ namespace ContextStateGroup
         public string currentUWType = "";
         public string currentBattleType = "";
         public string currentTransportationType = "";
+        public string currentEmoType = "";
     }
 }

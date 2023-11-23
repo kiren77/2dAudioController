@@ -24,6 +24,8 @@ namespace ContextStateGroup
         public event Action<string> OnUWTypeChanged;
         public event Action<string> OnBattleTypeChanged;
         public event Action<string> OnTransportationTypeChanged;
+        public event Action<string> OnEmoTypeChanged;
+
 
         public void InvokeOnContextStateChanged(ContextState state)
         {
@@ -33,6 +35,11 @@ namespace ContextStateGroup
         public void InvokeOnBiomeTypeChanged(string BiomeType)
         {
             OnBiomeTypeChanged?.Invoke(BiomeType);
+        }
+
+        public void InvokeOnEmoTypeChanged(string EmoType)
+        {
+            OnEmoTypeChanged?.Invoke(EmoType);
         }
 
         public void InvokeOnInteriorTypeChanged(string interiorType)

@@ -90,6 +90,11 @@ public void SetCurrentUWType(string uwtype)
     ContextStateManagerEvents.Instance.InvokeOnUWTypeChanged(ContextStateManagerFields.Instance.currentUWType); // Update this line
 }
 
+public string GetCurrentEmoType()
+{
+    return ContextStateManagerFields.Instance.currentEmoType; // Update this line
+}
+
 public string GetCurrentBattleType()
 {
     return ContextStateManagerFields.Instance.currentBattleType; // Update this line
@@ -126,4 +131,12 @@ public void SetCurrentTransportationType(string transportationType)
     ContextStateManagerFields.Instance.currentTransportationType = transportationType; // Update this line
     ContextStateManagerEvents.Instance.InvokeOnTransportationTypeChanged(ContextStateManagerFields.Instance.currentTransportationType); // Update this line
 }
+
+public void SetCurrentEmoType(string emoType)
+{
+    Debug.Log("Setting current emo type to: " + emoType); // Debug statement
+    ContextStateManagerFields.Instance.currentEmoType = emoType; // Update this line
+    ContextStateManagerEvents.Instance.InvokeOnEmoTypeChanged(ContextStateManagerFields.Instance.currentEmoType); // Update this line
+}
+
 }

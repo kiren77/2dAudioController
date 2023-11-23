@@ -99,10 +99,10 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638313469018307038
+  lastModified: 638353915994077986
   FileSizes:
   - Name: Desktop
-    Value: 6034
+    Value: 6254
   Exists: 1
 --- !u!114 &-8127752161154080665
 MonoBehaviour:
@@ -309,6 +309,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-6811025792572075873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Procedural Test/Metal Pendulum
+  m_EditorClassIdentifier: 
+  Name: Metal Pendulum
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 57973603
+    data2: 3771200559
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6700656407965386653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,10 +375,10 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638313469018286965
+  lastModified: 638353915994052843
   FileSizes:
   - Name: Desktop
-    Value: 9194
+    Value: 9458
   Exists: 1
 --- !u!114 &-6550437983541198282
 MonoBehaviour:
@@ -824,6 +848,30 @@ MonoBehaviour:
     data1: 3796240084
     data2: 3198757880
   Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2697116804349819733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Procedural Test/Master Pendulum
+  m_EditorClassIdentifier: 
+  Name: Master Pendulum
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2786388457
+    data2: 690590883
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -1326,13 +1374,14 @@ MonoBehaviour:
   - {fileID: -4777213437767609368}
   - {fileID: 5481164641670407715}
   - {fileID: -2400137138082305772}
+  - {fileID: 7791847344590844929}
   EditorParameters:
   - {fileID: -2492343617895423426}
   MasterBanks:
   - {fileID: -6619353115407895689}
   StringsBanks:
   - {fileID: -8197761349232279749}
-  cacheTime: 638313498108845741
+  cacheTime: 638353917678619719
   cacheVersion: 131603
 --- !u!114 &580682158362488298
 MonoBehaviour:
@@ -2257,10 +2306,10 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638313498108845741
+  lastModified: 638353917678619719
   FileSizes:
   - Name: Desktop
-    Value: 90559488
+    Value: 95120416
   Exists: 1
 --- !u!114 &7754358606199176344
 MonoBehaviour:
@@ -2289,6 +2338,35 @@ MonoBehaviour:
   - Joy
   - Ecstasy
   Exists: 1
+--- !u!114 &7791847344590844929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Procedural Test
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Procedural Test
+  Guid:
+    Data1: 1286072001
+    Data2: 1075580455
+    Data3: 1414071936
+    Data4: 721017648
+  Banks:
+  - {fileID: 7625596212956856395}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6811025792572075873}
+  - {fileID: -2697116804349819733}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 132618
 --- !u!114 &7812901112447178956
 MonoBehaviour:
   m_ObjectHideFlags: 0
