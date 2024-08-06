@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Settings
   m_EditorClassIdentifier: 
   headerSettings:
-    headerText: UNITY DEBUGGING
-    headerColor: {r: 1, g: 0.69061226, b: 0, a: 1}
+    headerText: Game Manager
+    headerColor: {r: 0.057249546, g: 0, b: 1, a: 1}
     textAlignmentOptions: 0
     fontStyleOptions: 0
-    fontSize: 12
-    fontColor: {r: 0, g: 0, b: 0, a: 1}
+    fontSize: 13.7
+    fontColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
     dropShadow: 0

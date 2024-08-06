@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -1197,20 +1197,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e7ba2ec5f8102448b4631191efd13e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toDay: {fileID: 1298859332}
-  toNight: {fileID: 550151921}
-  dayImage: {fileID: 1466147747}
-  nightImage: {fileID: 585860303}
-  sunMoonParentTransform: {fileID: 827561469}
+  toDayButton: {fileID: 0}
+  toNightButton: {fileID: 0}
   sunImage: {fileID: 1340128547}
   moonImage: {fileID: 1521803810}
-  rotationSpeed: 1
-  scale: 1
+  dayImage: {fileID: 1466147747}
+  nightImage: {fileID: 585860303}
+  background: {fileID: 2070365918}
+  sunMoonParentTransform: {fileID: 827561469}
   dayColor: {r: 0.4431373, g: 0.83921576, b: 0.9333334, a: 1}
   nightColor: {r: 0.048727296, g: 0.10095787, b: 0.6886792, a: 1}
-  background: {fileID: 2070365918}
-  dayNightUIManager: {fileID: 1090568631}
-  delayDuration: 2
+  rotationDuration: 1
+  fadeDuration: 1
 --- !u!1 &105058935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,6 +4832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a090d3d3506b16448514f76783c49f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _editorState: 0
 --- !u!4 &488362072
 Transform:
   m_ObjectHideFlags: 0
@@ -5254,9 +5253,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -6878,7 +6885,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.7
+  m_fontSize: 18
   m_fontSizeBase: 21
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7584,7 +7591,7 @@ MonoBehaviour:
       Data2: 1299422417
       Data3: 974577046
       Data4: 940503730
-    Path: event:/Music/MBOld version
+    Path: event:/Music/Battle Music/MB1 Crossfade System
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -8083,7 +8090,7 @@ MonoBehaviour:
       Data2: 1299422417
       Data3: 974577046
       Data4: 940503730
-    Path: event:/Music/MBOld version
+    Path: event:/Music/Battle Music/MB1 Crossfade System
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -9240,6 +9247,25 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -10992,8 +11018,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da30fb6e47eddf548b8d529b2ad5970c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exteriorDayNight: {fileID: 1297221837}
-  interiorDayNight: {fileID: 104795764}
+  parentInOWI: {fileID: 0}
+  parentInOWE: {fileID: 0}
+  dayNightButtons: {fileID: 0}
+  OWIParent: {fileID: 0}
+  OWEParent: {fileID: 0}
 --- !u!4 &1090568632
 Transform:
   m_ObjectHideFlags: 0
@@ -11628,7 +11657,7 @@ MonoBehaviour:
       Data2: 1340407062
       Data3: 1253421491
       Data4: -1700070292
-    Path: event:/Music/Music Underworld
+    Path: event:/Music/UW Music/Music Underworld
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -12664,7 +12693,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.7
+  m_fontSize: 18
   m_fontSizeBase: 21
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -13260,20 +13289,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e7ba2ec5f8102448b4631191efd13e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toDay: {fileID: 1057300157}
-  toNight: {fileID: 1330238124}
-  dayImage: {fileID: 390988854}
-  nightImage: {fileID: 797205629}
-  sunMoonParentTransform: {fileID: 1930616666}
+  toDayButton: {fileID: 0}
+  toNightButton: {fileID: 0}
   sunImage: {fileID: 1783833220}
   moonImage: {fileID: 1717366676}
-  rotationSpeed: 1
-  scale: 1
+  dayImage: {fileID: 390988854}
+  nightImage: {fileID: 797205629}
+  background: {fileID: 203590595}
+  sunMoonParentTransform: {fileID: 1930616666}
   dayColor: {r: 0.4431373, g: 0.83921576, b: 0.9333334, a: 1}
   nightColor: {r: 0.048727296, g: 0.10095787, b: 0.6886792, a: 1}
-  background: {fileID: 203590595}
-  dayNightUIManager: {fileID: 1090568631}
-  delayDuration: 2
+  rotationDuration: 1
+  fadeDuration: 1
 --- !u!1 &1297924508
 GameObject:
   m_ObjectHideFlags: 0
@@ -13550,7 +13577,7 @@ MonoBehaviour:
       Data2: 1340407062
       Data3: 1253421491
       Data4: -1700070292
-    Path: event:/Music/Music Underworld
+    Path: event:/Music/UW Music/Music Underworld
   Event: 
   PlayEvent: 1
   StopEvent: 2
@@ -13929,6 +13956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graphicRaycaster: {fileID: 1578371899}
+  eventSystem: {fileID: 0}
   targetRectTransform: {fileID: 921671628}
 --- !u!4 &1334332392
 Transform:
@@ -16516,7 +16544,7 @@ MonoBehaviour:
       Data2: 1082195070
       Data3: 1903819418
       Data4: 462321738
-    Path: event:/Music/Music Overworld Interior
+    Path: event:/Music/OWI Music/Music Overworld Interior
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -16821,7 +16849,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -21885,7 +21915,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.7
+  m_fontSize: 18
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1

@@ -318,8 +318,9 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambience
+  - Long SFX
   - Music
-  - SFX
+  - Short SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 1

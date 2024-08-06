@@ -1,6 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8925216474325911136
+--- !u!114 &-9205166011674602371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MB1 Segmented System/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 3796240084
+    data2: 3198757880
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-8959260720707591699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,36 +34,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/OWE Music/Music Overworld Exterior
+  m_Name: event:/Music/Battle Music/MB1 Crossfade System
   m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/OWE Music/Music Overworld Exterior
-  Guid:
-    Data1: 1268403606
-    Data2: 1108038620
-    Data3: -822103128
-    Data4: -1720448613
-  Banks:
-  - {fileID: 7625596212956856395}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 142333
---- !u!114 &-8577457693536764234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Battle Music/MBOld version
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Battle Music/MBOld version
+  Path: event:/Music/Battle Music/MB1 Crossfade System
   Guid:
     Data1: -1640695757
     Data2: 1299422417
@@ -51,13 +48,12 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7356820659153352413}
-  - {fileID: -2999614578383191240}
-  - {fileID: 3879554278835563489}
+  - {fileID: -313910132754936370}
+  - {fileID: 3944686368059471755}
   MinDistance: 0
   MaxDistance: 25
   Length: 66456
---- !u!114 &-8493072340499590710
+--- !u!114 &-8820868662018427454
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,22 +63,136 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Overworld Interior/Music Trust
+  m_Name: parameter:/Music Overworld Interior/Music Anticipation
   m_EditorClassIdentifier: 
-  Name: Music Trust
+  Name: Music Anticipation
   StudioPath: 
   Min: 0
   Max: 2
   Default: 0
   ID:
-    data1: 1928728832
-    data2: 3468538656
+    data1: 2645940907
+    data2: 3916789601
   Type: 2
   IsGlobal: 0
   Labels:
-  - Acceptance
-  - Trust
-  - Admiration
+  - Interest
+  - Anticipation
+  - Vigilance
+  Exists: 1
+--- !u!114 &-8577856986054201034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TP Music Selection/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2059426516
+    data2: 184673471
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Train
+  - Sailing
+  - Flying
+  Exists: 1
+--- !u!114 &-8558583338963810272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MB1 Segmented System/Lose-Win
+  m_EditorClassIdentifier: 
+  Name: Lose-Win
+  StudioPath: 
+  Min: -2
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3767422548
+    data2: 3407399888
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-8382608604576128012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/EMO Music/Emotion Wheel Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/EMO Music/Emotion Wheel Music
+  Guid:
+    Data1: -408363067
+    Data2: 1202593388
+    Data3: 803421064
+    Data4: 87790736
+  Banks:
+  - {fileID: 7625596212956856395}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2171050882150367326}
+  - {fileID: -338818339636706442}
+  - {fileID: -4439667529514362365}
+  - {fileID: -6506921773733618291}
+  - {fileID: 1426537702664962066}
+  - {fileID: 1092990960896265104}
+  - {fileID: -6058216398650250807}
+  - {fileID: 1361206618489300518}
+  - {fileID: 1776943290613677001}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8375776654340169637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TP Ambience Selection/TP Selector
+  m_EditorClassIdentifier: 
+  Name: TP Selector
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1905653570
+    data2: 1911558180
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Pier or Paddling
+  - Sailing
+  - Train
   Exists: 1
 --- !u!114 &-8197761349232279749
 MonoBehaviour:
@@ -99,315 +209,12 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638353915994077986
+  lastModified: 638585724030016438
   FileSizes:
   - Name: Desktop
-    Value: 6254
+    Value: 6192
   Exists: 1
---- !u!114 &-8127752161154080665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Weather/Rain Textures
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Weather/Rain Textures
-  Guid:
-    Data1: 1931255553
-    Data2: 1320395826
-    Data3: -1614831983
-    Data4: 1343898495
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 220000
---- !u!114 &-8019128420476090324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Emotion Wheel Music/Music Surprise
-  m_EditorClassIdentifier: 
-  Name: Music Surprise
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 3196949238
-    data2: 27745906
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Distraction
-  - Surprise
-  - Amazement
-  Exists: 1
---- !u!114 &-7678027058217546378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Dark Temple Cave/Safe - Ominous
-  m_EditorClassIdentifier: 
-  Name: Safe - Ominous
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 104930097
-    data2: 2817270433
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7546947035517501439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/One Shot Explosions
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/One Shot Explosions
-  Guid:
-    Data1: -96443015
-    Data2: 1116919609
-    Data3: -1046193768
-    Data4: -1743248388
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-7445617900960658767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Rain Wind Thunder/Exposed vs Sheltered
-  m_EditorClassIdentifier: 
-  Name: Exposed vs Sheltered
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2126467715
-    data2: 802911684
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7360872234003082497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Fire Master/Toggle2D_hasFire
-  m_EditorClassIdentifier: 
-  Name: Toggle2D_hasFire
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 350427507
-    data2: 3736230453
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7356820659153352413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MBOld version/Battle Music Randomizer
-  m_EditorClassIdentifier: 
-  Name: Battle Music Randomizer
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 2494465566
-    data2: 796357400
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Off
-  - Subtle
-  - Noted
-  - Bonkers
-  Exists: 1
---- !u!114 &-7125727580954931838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Exposed vs Sheltered Snapshot/Exposed vs Sheltered
-  m_EditorClassIdentifier: 
-  Name: Exposed vs Sheltered
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2126467715
-    data2: 802911684
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6811025792572075873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Procedural Test/Metal Pendulum
-  m_EditorClassIdentifier: 
-  Name: Metal Pendulum
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 57973603
-    data2: 3771200559
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6700656407965386653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Emotion Wheel Music/Music Anger
-  m_EditorClassIdentifier: 
-  Name: Music Anger
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 458542797
-    data2: 2091600641
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Annoyance
-  - Anger
-  - Rage
-  Exists: 1
---- !u!114 &-6619353115407895689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638353915994052843
-  FileSizes:
-  - Name: Desktop
-    Value: 9458
-  Exists: 1
---- !u!114 &-6550437983541198282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Underworld/UW Ambience/Dark Temple Main Drone
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Underworld/UW Ambience/Dark Temple Main Drone
-  Guid:
-    Data1: 2144210391
-    Data2: 1134662391
-    Data3: -1614629194
-    Data4: -16923730
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 13606
---- !u!114 &-5869274444078927365
+--- !u!114 &-7609795890683665456
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -434,7 +241,7 @@ MonoBehaviour:
   - Joy
   - Ecstasy
   Exists: 1
---- !u!114 &-5690576855813663933
+--- !u!114 &-7280062348471059834
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -444,24 +251,348 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Overworld Interior/Music Disgust
+  m_Name: parameter:/OWE Ambience/TimeOfDay
   m_EditorClassIdentifier: 
-  Name: Music Disgust
+  Name: TimeOfDay
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3996647192
+    data2: 3381049414
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Day
+  - Night
+  Exists: 1
+--- !u!114 &-7258410496968332129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Battle Music/MB1 Segmented System
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Battle Music/MB1 Segmented System
+  Guid:
+    Data1: -1446483624
+    Data2: 1216050835
+    Data3: -193161586
+    Data4: -1242384015
+  Banks:
+  - {fileID: 7625596212956856395}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8558583338963810272}
+  - {fileID: -9205166011674602371}
+  MinDistance: 0
+  MaxDistance: 25
+  Length: 1417846
+--- !u!114 &-7125727580954931838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Exposed vs Sheltered Snapshot/Exposed vs Sheltered
+  m_EditorClassIdentifier: 
+  Name: Exposed vs Sheltered
   StudioPath: 
   Min: 0
   Max: 2
   Default: 0
   ID:
-    data1: 911986034
-    data2: 2938091865
+    data1: 2126467715
+    data2: 802911684
   Type: 2
   IsGlobal: 0
   Labels:
-  - Boredom
-  - Disgust
-  - Loathing
+  - Exposed
+  - Sheltered
+  - Cosy
   Exists: 1
---- !u!114 &-5590165813736803211
+--- !u!114 &-7073452790955916197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience Folder/Transportation/TP Ambience Selection
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience Folder/Transportation/TP Ambience Selection
+  Guid:
+    Data1: -1330906260
+    Data2: 1166180159
+    Data3: 497181580
+    Data4: -520492937
+  Banks:
+  - {fileID: 1064667509071357405}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6032516276953355517}
+  - {fileID: -8375776654340169637}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6826908239326902734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Overworld Interior/Music Trust
+  m_EditorClassIdentifier: 
+  Name: Music Trust
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1928728832
+    data2: 3468538656
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Acceptance
+  - Trust
+  - Admiration
+  Exists: 1
+--- !u!114 &-6619353115407895689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638585724029991371
+  FileSizes:
+  - Name: Desktop
+    Value: 10284
+  Exists: 1
+--- !u!114 &-6531214927925409443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Overworld Interior/Music Surprise
+  m_EditorClassIdentifier: 
+  Name: Music Surprise
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3196949238
+    data2: 27745906
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Distraction
+  - Surprise
+  - Amazement
+  Exists: 1
+--- !u!114 &-6506921773733618291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Emotion Wheel Music/Music Sadness
+  m_EditorClassIdentifier: 
+  Name: Music Sadness
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 4005251809
+    data2: 445636631
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Pensiveness
+  - Sadness
+  - Grief
+  Exists: 1
+--- !u!114 &-6494352300530967462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music/Menu Music
+  Guid:
+    Data1: -1539839218
+    Data2: 1098190975
+    Data3: 242724495
+    Data4: -1775520105
+  Banks:
+  - {fileID: 7625596212956856395}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4051514297116209008}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6451709863944900069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/TP Music/TP Music Selection
+  m_EditorClassIdentifier: 
+  Path: event:/Music/TP Music/TP Music Selection
+  Guid:
+    Data1: 1031321388
+    Data2: 1106712578
+    Data3: -2052051786
+    Data4: 329422841
+  Banks:
+  - {fileID: 7625596212956856395}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8577856986054201034}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6214798733100796023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OWI Ambience Selection/OWI Ambience Selector
+  m_EditorClassIdentifier: 
+  Name: OWI Ambience Selector
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 3801213791
+    data2: 3402339012
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Null
+  - House
+  - Tavern
+  - Throne Room
+  - OW Temple
+  Exists: 1
+--- !u!114 &-6058216398650250807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Emotion Wheel Music/Music Surprise
+  m_EditorClassIdentifier: 
+  Name: Music Surprise
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3196949238
+    data2: 27745906
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Distraction
+  - Surprise
+  - Amazement
+  Exists: 1
+--- !u!114 &-5674697988393617689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Effects/Short SFX/Explosions/All Explosions
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Effects/Short SFX/Explosions/All Explosions
+  Guid:
+    Data1: -1204169975
+    Data2: 1251219396
+    Data3: -1155956857
+    Data4: -1297791951
+  Banks:
+  - {fileID: 6270639887446523334}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4439667529514362365
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -488,34 +619,7 @@ MonoBehaviour:
   - Trust
   - Admiration
   Exists: 1
---- !u!114 &-5209506877510200775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Night to Day One Shots/N2D Overworld Interior
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Night to Day One Shots/N2D Overworld Interior
-  Guid:
-    Data1: 2125439698
-    Data2: 1329765505
-    Data3: -1634659956
-    Data4: 831988300
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-4949072211470067431
+--- !u!114 &-4290745949130489435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -525,21 +629,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SFX/Explosion Distance
+  m_Name: parameter:/OWE Biome Selection/OWE Biome Selector
   m_EditorClassIdentifier: 
-  Name: Explosion Distance
+  Name: OWE Biome Selector
   StudioPath: 
   Min: 0
-  Max: 1
+  Max: 3
   Default: 0
   ID:
-    data1: 2634787128
-    data2: 621342872
-  Type: 0
+    data1: 2896325645
+    data2: 1291385602
+  Type: 2
   IsGlobal: 0
-  Labels: []
+  Labels:
+  - Desert
+  - Forest
+  - Jungle
+  - Ocean
   Exists: 1
---- !u!114 &-4777213437767609368
+--- !u!114 &-4064148892030191505
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -549,9 +657,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Underworld/UW Music/Music Underworld
+  m_Name: event:/Music/UW Music/Music Underworld
   m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Underworld/UW Music/Music Underworld
+  Path: event:/Music/UW Music/Music Underworld
   Guid:
     Data1: 54988956
     Data2: 1340407062
@@ -563,103 +671,11 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1061199849983157289}
+  - {fileID: 4082687508271402525}
   MinDistance: 1
   MaxDistance: 20
   Length: 502563
---- !u!114 &-4557067798956898107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Biome_Forest/Local Fauna
-  m_EditorClassIdentifier: 
-  Name: Local Fauna
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0.2
-  ID:
-    data1: 2749176048
-    data2: 4258343414
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-4515061850305840909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638234955687084795
-  FileSizes:
-  - Name: Desktop
-    Value: 1047648
-  Exists: 1
---- !u!114 &-4456208926235631968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sewers/Toggle2D_hasFire
-  m_EditorClassIdentifier: 
-  Name: Toggle2D_hasFire
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 350427507
-    data2: 3736230453
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-4360112783316685520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Industrial Place/Texture Saturation
-  m_EditorClassIdentifier: 
-  Name: Texture Saturation
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2119691721
-    data2: 4249719385
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-4291340699460816163
+--- !u!114 &-3269369039968991480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -669,26 +685,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Jungle
+  m_Name: event:/Ambience Folder/Overworld/OWI Ambience/OWI Ambience Selection
   m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Jungle
+  Path: event:/Ambience Folder/Overworld/OWI Ambience/OWI Ambience Selection
   Guid:
-    Data1: -816551396
-    Data2: 1201334710
-    Data3: 1911025542
-    Data4: -353079126
+    Data1: 1318716804
+    Data2: 1078045553
+    Data3: 2008046987
+    Data4: 846248703
   Banks:
   - {fileID: 1064667509071357405}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters:
-  - {fileID: -3063980605858257836}
-  - {fileID: 970857208463312135}
+  - {fileID: -6214798733100796023}
   MinDistance: 1
   MaxDistance: 20
-  Length: 204298
---- !u!114 &-4188273907854154310
+  Length: 0
+--- !u!114 &-2492343617895423426
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -698,21 +713,331 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/River&Falls/hasStream
+  m_Name: parameter:/TimeOfDay
   m_EditorClassIdentifier: 
-  Name: hasStream
-  StudioPath: 
+  Name: TimeOfDay
+  StudioPath: parameter:/Environment/Overworld Time and Place/TimeOfDay
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 1726644054
-    data2: 2847963777
+    data1: 3996647192
+    data2: 3381049414
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Day
+  - Night
+  Exists: 1
+--- !u!114 &-2369163345922239039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Overworld Interior/Music Anger
+  m_EditorClassIdentifier: 
+  Name: Music Anger
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 458542797
+    data2: 2091600641
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Annoyance
+  - Anger
+  - Rage
+  Exists: 1
+--- !u!114 &-2282203814475466705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/UW Ambience Selection/UW Ambience Selector
+  m_EditorClassIdentifier: 
+  Name: UW Ambience Selector
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1996058330
+    data2: 1542533228
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Cave Temple
+  - Industrial Place
+  - Sewers
+  Exists: 1
+--- !u!114 &-1904791002486920521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience Folder/Underworld/UW Ambience/UW Ambience Selection
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience Folder/Underworld/UW Ambience/UW Ambience Selection
+  Guid:
+    Data1: -1969166090
+    Data2: 1320741825
+    Data3: -1854730349
+    Data4: 836271502
+  Banks:
+  - {fileID: 1064667509071357405}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 706464106801991166}
+  - {fileID: -2282203814475466705}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1628283982831175713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Geo Regions/Forest
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Geo Regions/Forest
+  Guid:
+    Data1: -879973164
+    Data2: 1212087670
+    Data3: -1218183531
+    Data4: -1434628722
+  Banks:
+  - {fileID: -6619353115407895689}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-338818339636706442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Emotion Wheel Music/Music Anger
+  m_EditorClassIdentifier: 
+  Name: Music Anger
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 458542797
+    data2: 2091600641
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Annoyance
+  - Anger
+  - Rage
+  Exists: 1
+--- !u!114 &-313910132754936370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MB1 Crossfade System/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 3796240084
+    data2: 3198757880
   Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-3874364815839909851
+--- !u!114 &-134005268516353969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Exposed vs Sheltered Snapshot
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Exposed vs Sheltered Snapshot
+  Guid:
+    Data1: -1147540336
+    Data2: 1290203345
+    Data3: 888622511
+    Data4: -62845432
+  Banks:
+  - {fileID: -6619353115407895689}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7125727580954931838}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -8197761349232279749}
+  - {fileID: 1064667509071357405}
+  - {fileID: -6619353115407895689}
+  - {fileID: 7625596212956856395}
+  - {fileID: 3000452473000312469}
+  - {fileID: 6270639887446523334}
+  EditorEvents:
+  - {fileID: -1628283982831175713}
+  - {fileID: 4677417063760288669}
+  - {fileID: 2447413078945664628}
+  - {fileID: -134005268516353969}
+  - {fileID: -4064148892030191505}
+  - {fileID: -6494352300530967462}
+  - {fileID: 5677563920112400808}
+  - {fileID: -8382608604576128012}
+  - {fileID: -3269369039968991480}
+  - {fileID: -8959260720707591699}
+  - {fileID: -7258410496968332129}
+  - {fileID: 7593505703212386246}
+  - {fileID: -7073452790955916197}
+  - {fileID: -6451709863944900069}
+  - {fileID: 2585924213314016414}
+  - {fileID: 4107484132473095940}
+  - {fileID: 3211857681775869518}
+  - {fileID: -5674697988393617689}
+  - {fileID: -1904791002486920521}
+  EditorParameters:
+  - {fileID: -2492343617895423426}
+  MasterBanks:
+  - {fileID: -6619353115407895689}
+  StringsBanks:
+  - {fileID: -8197761349232279749}
+  cacheTime: 638585724030016438
+  cacheVersion: 131603
+--- !u!114 &706464106801991166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/UW Ambience Selection/Temple Area
+  m_EditorClassIdentifier: 
+  Name: Temple Area
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 190663050
+    data2: 351733961
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Dark Room
+  - Sacred Room
+  - Energy Room
+  Exists: 1
+--- !u!114 &767505924416275354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OWE Manmade Selection/OWE Manmade Selector
+  m_EditorClassIdentifier: 
+  Name: OWE Manmade Selector
+  StudioPath: 
+  Min: 0
+  Max: 0
+  Default: 0
+  ID:
+    data1: 1714655428
+    data2: 1409458052
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Market
+  Exists: 1
+--- !u!114 &1064667509071357405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638585724029775907
+  FileSizes:
+  - Name: Desktop
+    Value: 36652768
+  Exists: 1
+--- !u!114 &1092990960896265104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -745,7 +1070,110 @@ MonoBehaviour:
   - Anticipation
   - Surprise
   Exists: 1
---- !u!114 &-3727509448648549695
+--- !u!114 &1333093126416541420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OWE Ambience/OWE Manmade Selector
+  m_EditorClassIdentifier: 
+  Name: OWE Manmade Selector
+  StudioPath: 
+  Min: 0
+  Max: 0
+  Default: 0
+  ID:
+    data1: 1714655428
+    data2: 1409458052
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Market
+  Exists: 1
+--- !u!114 &1361206618489300518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Emotion Wheel Music/Music Fear
+  m_EditorClassIdentifier: 
+  Name: Music Fear
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 196239621
+    data2: 3327496436
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Apprehension
+  - Fear
+  - Terror
+  Exists: 1
+--- !u!114 &1426537702664962066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Emotion Wheel Music/Music Joy
+  m_EditorClassIdentifier: 
+  Name: Music Joy
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3412552222
+    data2: 2008993471
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Serenity
+  - Joy
+  - Ecstasy
+  Exists: 1
+--- !u!114 &1676878120922075064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OWE Manmade Selection/Crowd Business
+  m_EditorClassIdentifier: 
+  Name: Crowd Business
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1764684012
+    data2: 756527484
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1776943290613677001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -772,199 +1200,7 @@ MonoBehaviour:
   - Disgust
   - Loathing
   Exists: 1
---- !u!114 &-3638433500725277249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Underworld/UW Ambience/Sewers
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Underworld/UW Ambience/Sewers
-  Guid:
-    Data1: 1679470095
-    Data2: 1086892703
-    Data3: 367679144
-    Data4: -470975659
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 8062478042925235410}
-  - {fileID: -4456208926235631968}
-  - {fileID: 580682158362488298}
-  - {fileID: 1972421804690414597}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 91000
---- !u!114 &-3063980605858257836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Biome_Jungle/Local Fauna
-  m_EditorClassIdentifier: 
-  Name: Local Fauna
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0.2
-  ID:
-    data1: 2749176048
-    data2: 4258343414
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-2999614578383191240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MBOld version/Intensity
-  m_EditorClassIdentifier: 
-  Name: Intensity
-  StudioPath: 
-  Min: 0
-  Max: 7
-  Default: 0
-  ID:
-    data1: 3796240084
-    data2: 3198757880
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-2697116804349819733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Procedural Test/Master Pendulum
-  m_EditorClassIdentifier: 
-  Name: Master Pendulum
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 2786388457
-    data2: 690590883
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-2507441079667251524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Fire Master/2D_Fire_Size_y
-  m_EditorClassIdentifier: 
-  Name: 2D_Fire_Size_y
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 1553075708
-    data2: 3571230121
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Cozy Crackling Fire
-  - Bonfire
-  - Max Fire
-  Exists: 1
---- !u!114 &-2492343617895423426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/TimeOfDay
-  m_EditorClassIdentifier: 
-  Name: TimeOfDay
-  StudioPath: parameter:/Environment/Overworld Time and Place/TimeOfDay
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3996647192
-    data2: 3381049414
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Day
-  - Night
-  Exists: 1
---- !u!114 &-2400137138082305772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Emotion Wheel Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Emotion Wheel Music
-  Guid:
-    Data1: -408363067
-    Data2: 1202593388
-    Data3: 803421064
-    Data4: 87790736
-  Banks:
-  - {fileID: 7625596212956856395}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -2355550732523039187}
-  - {fileID: -6700656407965386653}
-  - {fileID: -5590165813736803211}
-  - {fileID: 1862584594954829643}
-  - {fileID: 7754358606199176344}
-  - {fileID: -3874364815839909851}
-  - {fileID: -8019128420476090324}
-  - {fileID: 5902847070456910133}
-  - {fileID: -3727509448648549695}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-2355550732523039187
+--- !u!114 &2171050882150367326
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -991,651 +1227,6 @@ MonoBehaviour:
   - Anticipation
   - Vigilance
   Exists: 1
---- !u!114 &-2329803850171406849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sailing/Toggle2D_hasFire
-  m_EditorClassIdentifier: 
-  Name: Toggle2D_hasFire
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 350427507
-    data2: 3736230453
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-2008425713799570823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Volcano
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Volcano
-  Guid:
-    Data1: -67702278
-    Data2: 1158704217
-    Data3: -1288732514
-    Data4: 1801172744
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1660110368395357332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/Water Features/River&Falls
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/Water Features/River&Falls
-  Guid:
-    Data1: 1083355273
-    Data2: 1296503293
-    Data3: 430334082
-    Data4: -369808355
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -4188273907854154310}
-  - {fileID: 7273266374259304838}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 261327
---- !u!114 &-1628283982831175713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Geo Regions/Forest
-  m_EditorClassIdentifier: 
-  Path: snapshot:/Geo Regions/Forest
-  Guid:
-    Data1: -879973164
-    Data2: 1212087670
-    Data3: -1218183531
-    Data4: -1434628722
-  Banks:
-  - {fileID: -6619353115407895689}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-1584722141125113433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Overworld Interior/Music Fear
-  m_EditorClassIdentifier: 
-  Name: Music Fear
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 196239621
-    data2: 3327496436
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Apprehension
-  - Fear
-  - Terror
-  Exists: 1
---- !u!114 &-1208108346185900127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Day to Night One Shots/D2N Underworld
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Day to Night One Shots/D2N Underworld
-  Guid:
-    Data1: 1856059002
-    Data2: 1120723310
-    Data3: 2141617810
-    Data4: 1442998842
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1199775590686763683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Day to Night One Shots/D2N Overworld Interior
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Day to Night One Shots/D2N Overworld Interior
-  Guid:
-    Data1: -1615131752
-    Data2: 1223221397
-    Data3: 2017315721
-    Data4: -2096821889
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1055229285647229599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Underworld/UW Ambience/Dark Temple Cave
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Underworld/UW Ambience/Dark Temple Cave
-  Guid:
-    Data1: 2106217145
-    Data2: 1098500735
-    Data3: 1149492918
-    Data4: -1002480882
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7678027058217546378}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15000
---- !u!114 &-833631539678650211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Overworld Interior/Music Sadness
-  m_EditorClassIdentifier: 
-  Name: Music Sadness
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 4005251809
-    data2: 445636631
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Pensiveness
-  - Sadness
-  - Grief
-  Exists: 1
---- !u!114 &-300661902910941335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Biome_Forest/TimeOfDay
-  m_EditorClassIdentifier: 
-  Name: TimeOfDay
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3996647192
-    data2: 3381049414
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Day
-  - Night
-  Exists: 1
---- !u!114 &-297274822971043235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/SFX
-  Guid:
-    Data1: -1146459138
-    Data2: 1244831896
-    Data3: 494590097
-    Data4: 851357502
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -4949072211470067431}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &-134005268516353969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Exposed vs Sheltered Snapshot
-  m_EditorClassIdentifier: 
-  Path: snapshot:/Exposed vs Sheltered Snapshot
-  Guid:
-    Data1: -1147540336
-    Data2: 1290203345
-    Data3: 888622511
-    Data4: -62845432
-  Banks:
-  - {fileID: 1064667509071357405}
-  - {fileID: -6619353115407895689}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7125727580954931838}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -8197761349232279749}
-  - {fileID: 1064667509071357405}
-  - {fileID: -6619353115407895689}
-  - {fileID: 7625596212956856395}
-  - {fileID: -4515061850305840909}
-  EditorEvents:
-  - {fileID: -1628283982831175713}
-  - {fileID: 4677417063760288669}
-  - {fileID: 2447413078945664628}
-  - {fileID: -134005268516353969}
-  - {fileID: 4614524154293775104}
-  - {fileID: 1582347930854170604}
-  - {fileID: -1208108346185900127}
-  - {fileID: -1199775590686763683}
-  - {fileID: -5209506877510200775}
-  - {fileID: 6298127864426197316}
-  - {fileID: -8127752161154080665}
-  - {fileID: -3638433500725277249}
-  - {fileID: 7144714438819778644}
-  - {fileID: 8111638539798197406}
-  - {fileID: 8275656586265513482}
-  - {fileID: 1692145001123195026}
-  - {fileID: -1660110368395357332}
-  - {fileID: -1055229285647229599}
-  - {fileID: -6550437983541198282}
-  - {fileID: 5066964991384132229}
-  - {fileID: -7546947035517501439}
-  - {fileID: 2053008166794505496}
-  - {fileID: -297274822971043235}
-  - {fileID: 5590311177737089954}
-  - {fileID: 3722062257634426024}
-  - {fileID: 3938472631202224363}
-  - {fileID: 3646794533080289550}
-  - {fileID: -4291340699460816163}
-  - {fileID: 5458275809123862901}
-  - {fileID: 4345745856568840483}
-  - {fileID: 7147538356861139640}
-  - {fileID: -2008425713799570823}
-  - {fileID: 7812901112447178956}
-  - {fileID: -8577457693536764234}
-  - {fileID: -8925216474325911136}
-  - {fileID: -4777213437767609368}
-  - {fileID: 5481164641670407715}
-  - {fileID: -2400137138082305772}
-  - {fileID: 7791847344590844929}
-  EditorParameters:
-  - {fileID: -2492343617895423426}
-  MasterBanks:
-  - {fileID: -6619353115407895689}
-  StringsBanks:
-  - {fileID: -8197761349232279749}
-  cacheTime: 638353917678619719
-  cacheVersion: 131603
---- !u!114 &580682158362488298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sewers/Texture Saturation
-  m_EditorClassIdentifier: 
-  Name: Texture Saturation
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2119691721
-    data2: 4249719385
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &710788485691998484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Overworld Interior/Music Anticipation
-  m_EditorClassIdentifier: 
-  Name: Music Anticipation
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 2645940907
-    data2: 3916789601
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Interest
-  - Anticipation
-  - Vigilance
-  Exists: 1
---- !u!114 &970857208463312135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Biome_Jungle/TimeOfDay
-  m_EditorClassIdentifier: 
-  Name: TimeOfDay
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3996647192
-    data2: 3381049414
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Day
-  - Night
-  Exists: 1
---- !u!114 &1061199849983157289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Underworld/Safe - Ominous
-  m_EditorClassIdentifier: 
-  Name: Safe - Ominous
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 104930097
-    data2: 2817270433
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &1064667509071357405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambience.bank
-  m_EditorClassIdentifier: 
-  Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Ambience.bank
-  Name: Ambience
-  StudioPath: bank:/Ambience
-  lastModified: 638262765445828039
-  FileSizes:
-  - Name: Desktop
-    Value: 42301728
-  Exists: 1
---- !u!114 &1582347930854170604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Night to Day One Shots/N2D Overworld Exterior
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Night to Day One Shots/N2D Overworld Exterior
-  Guid:
-    Data1: 1510007067
-    Data2: 1236602649
-    Data3: 463344294
-    Data4: -904400184
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &1692145001123195026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/Ext Manmade/Village
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/Ext Manmade/Village
-  Guid:
-    Data1: 1443477097
-    Data2: 1123624643
-    Data3: -1332430665
-    Data4: 1624646413
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &1862584594954829643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Emotion Wheel Music/Music Sadness
-  m_EditorClassIdentifier: 
-  Name: Music Sadness
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 4005251809
-    data2: 445636631
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Pensiveness
-  - Sadness
-  - Grief
-  Exists: 1
---- !u!114 &1972421804690414597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sewers/Exposed vs Sheltered
-  m_EditorClassIdentifier: 
-  Name: Exposed vs Sheltered
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2126467715
-    data2: 802911684
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &2053008166794505496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Explosions/Explosions
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Explosions/Explosions
-  Guid:
-    Data1: 769791998
-    Data2: 1190735712
-    Data3: 1109306778
-    Data4: -914944707
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 20526
 --- !u!114 &2447413078945664628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1663,31 +1254,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &2998206484202763064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Fire Master/2D_Fire_Proximity_x
-  m_EditorClassIdentifier: 
-  Name: 2D_Fire_Proximity_x
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2492833172
-    data2: 1185245612
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &3646794533080289550
+--- !u!114 &2585924213314016414
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1697,54 +1264,77 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Desert
+  m_Name: event:/Ambience Folder/Overworld/OWE Ambience/Biomes/OWE Biome Selection
   m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Desert
+  Path: event:/Ambience Folder/Overworld/OWE Ambience/Biomes/OWE Biome Selection
   Guid:
-    Data1: -1262561015
-    Data2: 1272392446
-    Data3: -616994170
-    Data4: 1852231851
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &3722062257634426024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Transportation/Train
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Transportation/Train
-  Guid:
-    Data1: -1538999525
-    Data2: 1325539362
-    Data3: 1093665666
-    Data4: -474344212
+    Data1: -479829977
+    Data2: 1082800210
+    Data3: -851174515
+    Data4: 1233755921
   Banks:
   - {fileID: 1064667509071357405}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 7066737209329832323}
-  - {fileID: 6695838376210388823}
-  - {fileID: 6397045181092920799}
+  - {fileID: -4290745949130489435}
+  - {fileID: 6985043778676462824}
   MinDistance: 1
   MaxDistance: 20
-  Length: 73030
---- !u!114 &3879554278835563489
+  Length: 0
+--- !u!114 &3000452473000312469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Long SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Long SFX.bank
+  Name: Long SFX
+  StudioPath: bank:/Long SFX
+  lastModified: 638585518877034281
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
+--- !u!114 &3211857681775869518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience Folder/Overworld/OWE Ambience/OWE Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience Folder/Overworld/OWE Ambience/OWE Ambience
+  Guid:
+    Data1: -489547286
+    Data2: 1287782206
+    Data3: -1146264898
+    Data4: -1180199946
+  Banks:
+  - {fileID: 1064667509071357405}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1333093126416541420}
+  - {fileID: -7280062348471059834}
+  - {fileID: 7771975942424072850}
+  - {fileID: 4927491582581237646}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &3944686368059471755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1754,7 +1344,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MBOld version/Lose-Win
+  m_Name: parameter:/MB1 Crossfade System/Lose-Win
   m_EditorClassIdentifier: 
   Name: Lose-Win
   StudioPath: 
@@ -1768,7 +1358,59 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &3938472631202224363
+--- !u!114 &4051514297116209008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Menu Music/Menu Music Type
+  m_EditorClassIdentifier: 
+  Name: Menu Music Type
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 1
+  ID:
+    data1: 305341691
+    data2: 1890657495
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - NO MUSIC
+  - Music Fantasy
+  - Music Zombie
+  - Music War
+  Exists: 1
+--- !u!114 &4082687508271402525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Underworld/Safe - Ominous
+  m_EditorClassIdentifier: 
+  Name: Safe - Ominous
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 104930097
+    data2: 2817270433
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4107484132473095940
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1778,76 +1420,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Transportation/Pier or Paddling
+  m_Name: event:/Ambience Folder/Overworld/OWE Ambience/Ext Manmade/OWE Manmade Selection
   m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Transportation/Pier or Paddling
+  Path: event:/Ambience Folder/Overworld/OWE Ambience/Ext Manmade/OWE Manmade Selection
   Guid:
-    Data1: 2138146722
-    Data2: 1126636709
-    Data3: -1494106965
-    Data4: 694158177
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 27864
---- !u!114 &4345745856568840483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Forest
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Forest
-  Guid:
-    Data1: -541058461
-    Data2: 1314154372
-    Data3: -1974948455
-    Data4: -1466703038
+    Data1: -647128464
+    Data2: 1201249368
+    Data3: 640857789
+    Data4: -54544550
   Banks:
   - {fileID: 1064667509071357405}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4557067798956898107}
-  - {fileID: -300661902910941335}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 227305
---- !u!114 &4614524154293775104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Night to Day One Shots/N2D Underworld
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Night to Day One Shots/N2D Underworld
-  Guid:
-    Data1: -1777429746
-    Data2: 1275865504
-    Data3: 742181001
-    Data4: -1337832716
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  - {fileID: 767505924416275354}
+  - {fileID: 1676878120922075064}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1878,119 +1466,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &5066964991384132229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Fire/Fireballs
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Fire/Fireballs
-  Guid:
-    Data1: 1570628971
-    Data2: 1212989543
-    Data3: 387584134
-    Data4: -889776908
-  Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4437
---- !u!114 &5458275809123862901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Mountain
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Mountain
-  Guid:
-    Data1: 1708934444
-    Data2: 1144390117
-    Data3: 1028400807
-    Data4: 116829677
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &5481164641670407715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Music Battle Outcome
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Music Battle Outcome
-  Guid:
-    Data1: -783994458
-    Data2: 1308448093
-    Data3: -1098508658
-    Data4: -176031515
-  Banks:
-  - {fileID: 7625596212956856395}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7273213202855162843}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 96843
---- !u!114 &5590311177737089954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Transportation/Sailing
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Transportation/Sailing
-  Guid:
-    Data1: 1536208652
-    Data2: 1241448017
-    Data3: 1534604687
-    Data4: -778592899
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -2329803850171406849}
-  - {fileID: 7057183771302346558}
-  - {fileID: 8769698779569467026}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 325000
---- !u!114 &5902847070456910133
+--- !u!114 &4927491582581237646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2000,7 +1476,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Emotion Wheel Music/Music Fear
+  m_Name: parameter:/OWE Ambience/OWE Biome Selector
+  m_EditorClassIdentifier: 
+  Name: OWE Biome Selector
+  StudioPath: 
+  Min: 0
+  Max: 3
+  Default: 0
+  ID:
+    data1: 2896325645
+    data2: 1291385602
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Desert
+  - Forest
+  - Jungle
+  - Ocean
+  Exists: 1
+--- !u!114 &5546161362943917581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Overworld Interior/Music Fear
   m_EditorClassIdentifier: 
   Name: Music Fear
   StudioPath: 
@@ -2017,7 +1521,7 @@ MonoBehaviour:
   - Fear
   - Terror
   Exists: 1
---- !u!114 &6298127864426197316
+--- !u!114 &5677563920112400808
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2027,220 +1531,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Day to Night One Shots/D2N Overworld Exterior
+  m_Name: event:/Music/OWI Music/Music Overworld Interior
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Day to Night One Shots/D2N Overworld Exterior
+  Path: event:/Music/OWI Music/Music Overworld Interior
   Guid:
-    Data1: -816163586
-    Data2: 1095976312
-    Data3: -63759998
-    Data4: -1377989553
+    Data1: 430632750
+    Data2: 1082195070
+    Data3: 1903819418
+    Data4: 462321738
   Banks:
-  - {fileID: -4515061850305840909}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &6397045181092920799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Train/Exposed vs Sheltered
-  m_EditorClassIdentifier: 
-  Name: Exposed vs Sheltered
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2126467715
-    data2: 802911684
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &6441906324238229253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Industrial Place/Area Purpose
-  m_EditorClassIdentifier: 
-  Name: Area Purpose
-  StudioPath: 
-  Min: 0
-  Max: 10
-  Default: 0
-  ID:
-    data1: 3190834988
-    data2: 434368139
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - NA
-  - Storage Room
-  - Work Room 1
-  - Work Room 2
-  - Break Room
-  - Higher Up Room
-  - Control Room
-  - Guest Room
-  - Dining Area
-  - Puzzle Room
-  - Boss Room
-  Exists: 1
---- !u!114 &6695838376210388823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Train/Location on Train
-  m_EditorClassIdentifier: 
-  Name: Location on Train
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 342544861
-    data2: 3032767131
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - No Train or Gone
-  - Off Train
-  - Wagon
-  - Locomotive
-  Exists: 1
---- !u!114 &7057183771302346558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sailing/Submersion
-  m_EditorClassIdentifier: 
-  Name: Submersion
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1713155104
-    data2: 653958493
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &7066737209329832323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Train/Train State
-  m_EditorClassIdentifier: 
-  Name: Train State
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 0
-  ID:
-    data1: 1153564929
-    data2: 1639256646
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - At Rest
-  - Accelerating
-  - Cruising Speed
-  - Decelerating
-  Exists: 1
---- !u!114 &7144714438819778644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Underworld/UW Ambience/Industrial Place
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Underworld/UW Ambience/Industrial Place
-  Guid:
-    Data1: 1038550585
-    Data2: 1231306442
-    Data3: 936601782
-    Data4: -1483404884
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 6441906324238229253}
-  - {fileID: -4360112783316685520}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 332545
---- !u!114 &7147538356861139640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Ocean
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/Exterior/Biomes/Biome_Ocean
-  Guid:
-    Data1: 681261235
-    Data2: 1251302131
-    Data3: -82060149
-    Data4: -1587249305
-  Banks:
-  - {fileID: 1064667509071357405}
+  - {fileID: 7625596212956856395}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8902173963923829279}
+  - {fileID: 5546161362943917581}
+  - {fileID: 6459540457458155435}
+  - {fileID: -6531214927925409443}
+  - {fileID: -7609795890683665456}
+  - {fileID: 7668100183592802514}
+  - {fileID: -8820868662018427454}
+  - {fileID: -2369163345922239039}
+  - {fileID: -6826908239326902734}
   MinDistance: 1
   MaxDistance: 20
-  Length: 267027
---- !u!114 &7273213202855162843
+  Length: 160000
+--- !u!114 &6032516276953355517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2250,24 +1566,82 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Battle Outcome/Battle State
+  m_Name: parameter:/TP Ambience Selection/(Not Used) Hero's Journey Situations
   m_EditorClassIdentifier: 
-  Name: Battle State
+  Name: (Not Used) Hero's Journey Situations
+  StudioPath: 
+  Min: 0
+  Max: 13
+  Default: 0
+  ID:
+    data1: 3459572317
+    data2: 3679824034
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - HQ
+  - NPC Quest
+  - NPC Help
+  - Forcing the Threshold
+  - First Trials
+  - Meeting Allies and Enemies
+  - Growth, New Skills
+  - Epiphany
+  - Discarding Old Self
+  - Accepting the New Role
+  - The Road Back
+  - Final Challenge
+  - Restoring Order
+  - Taking New Place in the Old World
+  Exists: 1
+--- !u!114 &6270639887446523334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Short SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Short SFX.bank
+  Name: Short SFX
+  StudioPath: bank:/Short SFX
+  lastModified: 638585720666169862
+  FileSizes:
+  - Name: Desktop
+    Value: 1280
+  Exists: 1
+--- !u!114 &6459540457458155435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Overworld Interior/Music Disgust
+  m_EditorClassIdentifier: 
+  Name: Music Disgust
   StudioPath: 
   Min: 0
   Max: 2
   Default: 0
   ID:
-    data1: 3246624901
-    data2: 3027781876
+    data1: 911986034
+    data2: 2938091865
   Type: 2
   IsGlobal: 0
   Labels:
-  - Battle Ongoing
-  - Aftermath
-  - Leave Battleground
+  - Boredom
+  - Disgust
+  - Loathing
   Exists: 1
---- !u!114 &7273266374259304838
+--- !u!114 &6985043778676462824
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2277,20 +1651,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/River&Falls/Stream Intensity
+  m_Name: parameter:/OWE Biome Selection/TimeOfDay
   m_EditorClassIdentifier: 
-  Name: Stream Intensity
+  Name: TimeOfDay
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 1900954439
-    data2: 1297291529
-  Type: 0
-  IsGlobal: 0
-  Labels: []
+    data1: 3996647192
+    data2: 3381049414
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Day
+  - Night
   Exists: 1
+--- !u!114 &7593505703212386246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/OWE Music/OWE Music Selection
+  m_EditorClassIdentifier: 
+  Path: event:/Music/OWE Music/OWE Music Selection
+  Guid:
+    Data1: 835697961
+    Data2: 1213097184
+    Data3: 837290668
+    Data4: -1670198609
+  Banks:
+  - {fileID: 7625596212956856395}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8111664694198001281}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7625596212956856395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2306,12 +1710,12 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638353917678619719
+  lastModified: 638585518876833714
   FileSizes:
   - Name: Desktop
-    Value: 95120416
+    Value: 90594112
   Exists: 1
---- !u!114 &7754358606199176344
+--- !u!114 &7668100183592802514
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2321,88 +1725,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Emotion Wheel Music/Music Joy
+  m_Name: parameter:/Music Overworld Interior/Music Sadness
   m_EditorClassIdentifier: 
-  Name: Music Joy
+  Name: Music Sadness
   StudioPath: 
   Min: 0
   Max: 2
   Default: 0
   ID:
-    data1: 3412552222
-    data2: 2008993471
+    data1: 4005251809
+    data2: 445636631
   Type: 2
   IsGlobal: 0
   Labels:
-  - Serenity
-  - Joy
-  - Ecstasy
+  - Pensiveness
+  - Sadness
+  - Grief
   Exists: 1
---- !u!114 &7791847344590844929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Procedural Test
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Procedural Test
-  Guid:
-    Data1: 1286072001
-    Data2: 1075580455
-    Data3: 1414071936
-    Data4: 721017648
-  Banks:
-  - {fileID: 7625596212956856395}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -6811025792572075873}
-  - {fileID: -2697116804349819733}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 132618
---- !u!114 &7812901112447178956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Music Overworld Interior
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Music Overworld Interior
-  Guid:
-    Data1: 430632750
-    Data2: 1082195070
-    Data3: 1903819418
-    Data4: 462321738
-  Banks:
-  - {fileID: 7625596212956856395}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1584722141125113433}
-  - {fileID: -5690576855813663933}
-  - {fileID: 8110283917737115624}
-  - {fileID: -5869274444078927365}
-  - {fileID: -833631539678650211}
-  - {fileID: 710788485691998484}
-  - {fileID: 8531097317231034902}
-  - {fileID: -8493072340499590710}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 160000
---- !u!114 &8062478042925235410
+--- !u!114 &7771975942424072850
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2412,21 +1752,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sewers/hasStream
+  m_Name: parameter:/OWE Ambience/Crowd Business
   m_EditorClassIdentifier: 
-  Name: hasStream
+  Name: Crowd Business
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 1726644054
-    data2: 2847963777
-  Type: 1
+    data1: 1764684012
+    data2: 756527484
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &8110283917737115624
+--- !u!114 &8111664694198001281
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2436,159 +1776,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Overworld Interior/Music Surprise
+  m_Name: parameter:/OWE Music Selection/OWE Music Selector
   m_EditorClassIdentifier: 
-  Name: Music Surprise
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 3196949238
-    data2: 27745906
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Distraction
-  - Surprise
-  - Amazement
-  Exists: 1
---- !u!114 &8111638539798197406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Weather/Rain Wind Thunder
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Weather/Rain Wind Thunder
-  Guid:
-    Data1: -1075934145
-    Data2: 1180484041
-    Data3: -1946503788
-    Data4: 167062491
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7445617900960658767}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 38000
---- !u!114 &8275656586265513482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Fire/Fire Master
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Fire/Fire Master
-  Guid:
-    Data1: -426077602
-    Data2: 1237438610
-    Data3: 1998067892
-    Data4: -1858481154
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7360872234003082497}
-  - {fileID: -2507441079667251524}
-  - {fileID: 2998206484202763064}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 28366
---- !u!114 &8531097317231034902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Music Overworld Interior/Music Anger
-  m_EditorClassIdentifier: 
-  Name: Music Anger
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 458542797
-    data2: 2091600641
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Annoyance
-  - Anger
-  - Rage
-  Exists: 1
---- !u!114 &8769698779569467026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Sailing/Vessel State
-  m_EditorClassIdentifier: 
-  Name: Vessel State
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 1
-  ID:
-    data1: 3358023851
-    data2: 689891861
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - No Vessel
-  - Doomed
-  - Compromised
-  - Functional
-  Exists: 1
---- !u!114 &8902173963923829279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Biome_Ocean/Party or Vessel Location
-  m_EditorClassIdentifier: 
-  Name: Party or Vessel Location
+  Name: OWE Music Selector
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 2620175677
-    data2: 3621714217
+    data1: 913970739
+    data2: 3906977129
   Type: 2
   IsGlobal: 0
   Labels:
-  - Beach
-  - Open Seas
+  - Ambitious
+  - Call to Adventure
   Exists: 1
