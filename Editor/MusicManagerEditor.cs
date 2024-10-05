@@ -21,7 +21,6 @@ public class MusicManagerEditor : Editor
             EditorGUILayout.BeginVertical("box");
             manager.stateMusicMappings[i].state = (ContextState)EditorGUILayout.EnumPopup("State", manager.stateMusicMappings[i].state);
             manager.stateMusicMappings[i].musicEmitter = (StudioEventEmitter)EditorGUILayout.ObjectField("Music Emitter", manager.stateMusicMappings[i].musicEmitter, typeof(StudioEventEmitter), true);
-            manager.stateMusicMappings[i].vcaPath = EditorGUILayout.TextField("VCA Path", manager.stateMusicMappings[i].vcaPath);
             EditorGUILayout.EndVertical();
         }
 

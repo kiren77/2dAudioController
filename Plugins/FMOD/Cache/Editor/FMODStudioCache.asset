@@ -209,10 +209,30 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638585724030016438
+  lastModified: 638588946902765987
   FileSizes:
   - Name: Desktop
-    Value: 6192
+    Value: 6314
+  Exists: 1
+--- !u!114 &-7925292038845220291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SilentEmitter.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/SilentEmitter.bank
+  Name: SilentEmitter
+  StudioPath: bank:/SilentEmitter
+  lastModified: 638588946139742156
+  FileSizes:
+  - Name: Desktop
+    Value: 1570
   Exists: 1
 --- !u!114 &-7609795890683665456
 MonoBehaviour:
@@ -240,32 +260,6 @@ MonoBehaviour:
   - Serenity
   - Joy
   - Ecstasy
-  Exists: 1
---- !u!114 &-7280062348471059834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/OWE Ambience/TimeOfDay
-  m_EditorClassIdentifier: 
-  Name: TimeOfDay
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3996647192
-    data2: 3381049414
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Day
-  - Night
   Exists: 1
 --- !u!114 &-7258410496968332129
 MonoBehaviour:
@@ -296,6 +290,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 25
   Length: 1417846
+--- !u!114 &-7177457092187725127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/UW Ambience Selection/Areas Sewers
+  m_EditorClassIdentifier: 
+  Name: Areas Sewers
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 1
+  ID:
+    data1: 4030308402
+    data2: 143682697
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - SilentEmitter
+  - Bubbly Room
+  - Strong Stream
+  Exists: 1
 --- !u!114 &-7125727580954931838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +415,7 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638585724029991371
+  lastModified: 638588946902740862
   FileSizes:
   - Name: Desktop
     Value: 10284
@@ -453,34 +474,6 @@ MonoBehaviour:
   - Sadness
   - Grief
   Exists: 1
---- !u!114 &-6494352300530967462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Menu Music/Menu Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Menu Music/Menu Music
-  Guid:
-    Data1: -1539839218
-    Data2: 1098190975
-    Data3: 242724495
-    Data4: -1775520105
-  Banks:
-  - {fileID: 7625596212956856395}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 4051514297116209008}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-6451709863944900069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,7 +525,7 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - Null
+  - SilentEmitter
   - House
   - Tavern
   - Throne Room
@@ -592,6 +585,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4980525113625662413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OWE Ambience Selection/TimeOfDay
+  m_EditorClassIdentifier: 
+  Name: TimeOfDay
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3996647192
+    data2: 3381049414
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Day
+  - Night
+  Exists: 1
 --- !u!114 &-4439667529514362365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,18 +653,43 @@ MonoBehaviour:
   Name: OWE Biome Selector
   StudioPath: 
   Min: 0
-  Max: 3
-  Default: 0
+  Max: 4
+  Default: 1
   ID:
     data1: 2896325645
     data2: 1291385602
   Type: 2
   IsGlobal: 0
   Labels:
+  - SilentEmitter
   - Desert
   - Forest
   - Jungle
   - Ocean
+  Exists: 1
+--- !u!114 &-4136179092577463292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OWE Ambience Selection/Crowd Business
+  m_EditorClassIdentifier: 
+  Name: Crowd Business
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1764684012
+    data2: 756527484
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-4064148892030191505
 MonoBehaviour:
@@ -697,7 +741,7 @@ MonoBehaviour:
   - {fileID: 1064667509071357405}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -6214798733100796023}
   MinDistance: 1
@@ -809,6 +853,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: 706464106801991166}
   - {fileID: -2282203814475466705}
+  - {fileID: -7177457092187725127}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -937,13 +982,13 @@ MonoBehaviour:
   - {fileID: 7625596212956856395}
   - {fileID: 3000452473000312469}
   - {fileID: 6270639887446523334}
+  - {fileID: -7925292038845220291}
   EditorEvents:
   - {fileID: -1628283982831175713}
   - {fileID: 4677417063760288669}
   - {fileID: 2447413078945664628}
   - {fileID: -134005268516353969}
   - {fileID: -4064148892030191505}
-  - {fileID: -6494352300530967462}
   - {fileID: 5677563920112400808}
   - {fileID: -8382608604576128012}
   - {fileID: -3269369039968991480}
@@ -954,16 +999,17 @@ MonoBehaviour:
   - {fileID: -6451709863944900069}
   - {fileID: 2585924213314016414}
   - {fileID: 4107484132473095940}
-  - {fileID: 3211857681775869518}
   - {fileID: -5674697988393617689}
   - {fileID: -1904791002486920521}
+  - {fileID: 7910206938242462746}
+  - {fileID: 1111375085953112263}
   EditorParameters:
   - {fileID: -2492343617895423426}
   MasterBanks:
   - {fileID: -6619353115407895689}
   StringsBanks:
   - {fileID: -8197761349232279749}
-  cacheTime: 638585724030016438
+  cacheTime: 638588946907551596
   cacheVersion: 131603
 --- !u!114 &706464106801991166
 MonoBehaviour:
@@ -980,14 +1026,15 @@ MonoBehaviour:
   Name: Temple Area
   StudioPath: 
   Min: 0
-  Max: 2
-  Default: 0
+  Max: 3
+  Default: 1
   ID:
     data1: 190663050
     data2: 351733961
   Type: 2
   IsGlobal: 0
   Labels:
+  - SilentEmitter
   - Dark Room
   - Sacred Room
   - Energy Room
@@ -1007,14 +1054,15 @@ MonoBehaviour:
   Name: OWE Manmade Selector
   StudioPath: 
   Min: 0
-  Max: 0
-  Default: 0
+  Max: 1
+  Default: 1
   ID:
     data1: 1714655428
     data2: 1409458052
   Type: 2
   IsGlobal: 0
   Labels:
+  - SilentEmitter
   - Market
   Exists: 1
 --- !u!114 &1064667509071357405
@@ -1032,10 +1080,10 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638585724029775907
+  lastModified: 638588946139278680
   FileSizes:
   - Name: Desktop
-    Value: 36652768
+    Value: 24704704
   Exists: 1
 --- !u!114 &1092990960896265104
 MonoBehaviour:
@@ -1070,7 +1118,7 @@ MonoBehaviour:
   - Anticipation
   - Surprise
   Exists: 1
---- !u!114 &1333093126416541420
+--- !u!114 &1111375085953112263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1079,22 +1127,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/OWE Ambience/OWE Manmade Selector
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SilentEmitter
   m_EditorClassIdentifier: 
-  Name: OWE Manmade Selector
-  StudioPath: 
-  Min: 0
-  Max: 0
-  Default: 0
-  ID:
-    data1: 1714655428
-    data2: 1409458052
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Market
-  Exists: 1
+  Path: event:/SilentEmitter
+  Guid:
+    Data1: 1847625333
+    Data2: 1122381663
+    Data3: 880224653
+    Data4: -1387281087
+  Banks:
+  - {fileID: 1064667509071357405}
+  - {fileID: -7925292038845220291}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &1361206618489300518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1303,7 +1354,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 494
   Exists: 1
---- !u!114 &3211857681775869518
+--- !u!114 &3249977578016732507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1312,28 +1363,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambience Folder/Overworld/OWE Ambience/OWE Ambience
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OWE Ambience Selection/OWE Biome Selector
   m_EditorClassIdentifier: 
-  Path: event:/Ambience Folder/Overworld/OWE Ambience/OWE Ambience
-  Guid:
-    Data1: -489547286
-    Data2: 1287782206
-    Data3: -1146264898
-    Data4: -1180199946
-  Banks:
-  - {fileID: 1064667509071357405}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 1333093126416541420}
-  - {fileID: -7280062348471059834}
-  - {fileID: 7771975942424072850}
-  - {fileID: 4927491582581237646}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 8000
+  Name: OWE Biome Selector
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 1
+  ID:
+    data1: 2896325645
+    data2: 1291385602
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - SilentEmitter
+  - Desert
+  - Forest
+  - Jungle
+  - Ocean
+  Exists: 1
 --- !u!114 &3944686368059471755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1357,34 +1406,6 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
---- !u!114 &4051514297116209008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Menu Music/Menu Music Type
-  m_EditorClassIdentifier: 
-  Name: Menu Music Type
-  StudioPath: 
-  Min: 0
-  Max: 3
-  Default: 1
-  ID:
-    data1: 305341691
-    data2: 1890657495
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - NO MUSIC
-  - Music Fantasy
-  - Music Zombie
-  - Music War
   Exists: 1
 --- !u!114 &4082687508271402525
 MonoBehaviour:
@@ -1466,7 +1487,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &4927491582581237646
+--- !u!114 &4954262550805682443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1476,23 +1497,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/OWE Ambience/OWE Biome Selector
+  m_Name: parameter:/OWE Ambience Selection/OWE Manmade Selector
   m_EditorClassIdentifier: 
-  Name: OWE Biome Selector
+  Name: OWE Manmade Selector
   StudioPath: 
   Min: 0
-  Max: 3
-  Default: 0
+  Max: 1
+  Default: 1
   ID:
-    data1: 2896325645
-    data2: 1291385602
+    data1: 1714655428
+    data2: 1409458052
   Type: 2
   IsGlobal: 0
   Labels:
-  - Desert
-  - Forest
-  - Jungle
-  - Ocean
+  - SilentEmitter
+  - Market
   Exists: 1
 --- !u!114 &5546161362943917581
 MonoBehaviour:
@@ -1710,10 +1729,10 @@ MonoBehaviour:
   Path: ../../Fmod Projects/Music_Battle_Supernatural/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638585518876833714
+  lastModified: 638588946907551596
   FileSizes:
   - Name: Desktop
-    Value: 90594112
+    Value: 90592224
   Exists: 1
 --- !u!114 &7668100183592802514
 MonoBehaviour:
@@ -1742,7 +1761,7 @@ MonoBehaviour:
   - Sadness
   - Grief
   Exists: 1
---- !u!114 &7771975942424072850
+--- !u!114 &7910206938242462746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1751,21 +1770,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/OWE Ambience/Crowd Business
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience Folder/Overworld/OWE Ambience/OWE Ambience Selection
   m_EditorClassIdentifier: 
-  Name: Crowd Business
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1764684012
-    data2: 756527484
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  Path: event:/Ambience Folder/Overworld/OWE Ambience/OWE Ambience Selection
+  Guid:
+    Data1: -489547286
+    Data2: 1287782206
+    Data3: -1146264898
+    Data4: -1180199946
+  Banks:
+  - {fileID: 1064667509071357405}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4954262550805682443}
+  - {fileID: -4980525113625662413}
+  - {fileID: -4136179092577463292}
+  - {fileID: 3249977578016732507}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &8111664694198001281
 MonoBehaviour:
   m_ObjectHideFlags: 0

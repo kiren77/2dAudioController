@@ -18,12 +18,6 @@ namespace ContextStateGroup
         }
 
         public ContextState currentState = ContextState.StateMenu;
-        public string currentBiomeType = "";
-        public string currentInteriorType = "";
-        public string currentManMadeType = "";
-        public string currentUWType = "";
-        public string currentBattleType = "";
-        public string currentTransportationType = "";
-        public string currentEmoType = "";
+       
     }
 }

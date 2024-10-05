@@ -21,7 +21,6 @@ public class AmbienceManagerEditor : Editor
             EditorGUILayout.BeginVertical("box");
             manager.stateAmbienceMappings[i].state = (ContextState)EditorGUILayout.EnumPopup("State", manager.stateAmbienceMappings[i].state);
             manager.stateAmbienceMappings[i].ambienceEmitter = (StudioEventEmitter)EditorGUILayout.ObjectField("Ambience Emitter", manager.stateAmbienceMappings[i].ambienceEmitter, typeof(StudioEventEmitter), true);
-            manager.stateAmbienceMappings[i].vcaPath = EditorGUILayout.TextField("VCA Path", manager.stateAmbienceMappings[i].vcaPath);
             EditorGUILayout.EndVertical();
         }
 

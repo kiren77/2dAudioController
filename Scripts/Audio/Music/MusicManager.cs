@@ -1,54 +1,80 @@
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
-using FMOD.Studio;
 using ContextStateGroup;
 
 public class MusicManager : AudioManager
 {
-    public static new MusicManager Instance { get; private set; }
+    private static MusicManager _instance;
+    public new static MusicManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<MusicManager>();
+                if (_instance == null)
+                {
+                    GameObject go = new GameObject("MusicManager");
+                    _instance = go.AddComponent<MusicManager>();
+                    DontDestroyOnLoad(go);
+                }
+            }
+            return _instance;
+        }
+    }
 
     public List<StateMusicData> stateMusicMappings;
 
-    private Dictionary<ContextState, string> musicVCAPathMap;
-
-    protected override void Awake()
+    private void Awake()
     {
-        if (Instance != null && Instance != this)
+        Debug.Log("MusicManager: Awake called.");
+        if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
             return;
         }
-
-        Instance = this;
-
-        base.Awake();
+        _instance = this;
         InitializeMappings();
+    }
+
+    private void Start()
+    {
+        Debug.Log("MusicManager: Start called.");
+        if (stateMusicMappings == null || stateMusicMappings.Count == 0)
+        {
+            Debug.LogWarning("MusicManager: stateMusicMappings is empty.");
+        }
     }
 
     private void InitializeMappings()
     {
-        audioMap = new Dictionary<ContextState, StudioEventEmitter>();
-        musicVCAPathMap = new Dictionary<ContextState, string>();
+        if (stateMusicMappings == null || stateMusicMappings.Count == 0)
+        {
+            Debug.LogError("MusicManager: stateMusicMappings is not set or empty.");
+            return;
+        }
 
+        audioMap.Clear();
         foreach (var mapping in stateMusicMappings)
         {
-            audioMap[mapping.state] = mapping.musicEmitter;
-            musicVCAPathMap[mapping.state] = mapping.vcaPath;
+            if (mapping.musicEmitter != null)
+            {
+                audioMap[mapping.state] = mapping.musicEmitter;
+            }
         }
     }
 
-    protected override void HandleStateChange(ContextState newState)
+    public void PlayCurrentStateMusic()
+{
+    ContextState currentState = ContextStateManager.Instance.GetCurrentState();
+    if (currentState == ContextState.StateMenu)
     {
-        base.HandleStateChange(newState);
+        Debug.Log("MusicManager: Skipping music for StateMenu.");
+        return;
     }
 
-    public VCA GetMusicVCA(ContextState state)
-    {
-        if (musicVCAPathMap.TryGetValue(state, out var vcaPath))
-        {
-            return RuntimeManager.GetVCA(vcaPath);
-        }
-        return default;
-    }
+    PlayAudioForState(currentState);
+}
+
 }

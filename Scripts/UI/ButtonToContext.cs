@@ -6,24 +6,15 @@ public class ButtonToContext : MonoBehaviour
 {
     public Button button;
     public ContextState targetState;
-    private MusicManager musicManager;
-    private AmbienceManager ambienceManager;
 
     void Start()
     {
-        musicManager = FindObjectOfType<MusicManager>();
-        ambienceManager = FindObjectOfType<AmbienceManager>();
-
-        if (musicManager == null)
+        if (button == null)
         {
-            Debug.LogError("MusicManager not found in the scene.");
+            Debug.LogError("Button is not assigned.");
+            return;
         }
-
-        if (ambienceManager == null)
-        {
-            Debug.LogError("AmbienceManager not found in the scene.");
-        }
-
+        
         button.onClick.AddListener(OnButtonClick);
     }
 
@@ -31,8 +22,9 @@ public class ButtonToContext : MonoBehaviour
     {
         if (ContextStateManager.Instance != null)
         {
+            Debug.Log($"ButtonToContext: Attempting to change state to {targetState}");
             ContextStateManager.Instance.SetCurrentState(targetState);
-            Debug.Log("Current State is " + targetState);
+            Debug.Log("Current State is now: " + targetState);
         }
         else
         {

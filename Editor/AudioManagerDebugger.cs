@@ -31,25 +31,32 @@ public class AudioManagerDebugger : EditorWindow
 
     private void CheckPrefabAssignments()
     {
-        var uiManager = FindObjectOfType<UIManager>();
-        if (uiManager == null)
+        var panelManager = FindObjectOfType<ContextStatePanelManager>();
+        if (panelManager == null)
         {
-            Debug.LogError("UIManager not found in the scene.");
+            Debug.LogError("ContextStatePanelManager not found in the scene.");
             return;
         }
 
-        if (uiManager.ambienceUIPrefab == null)
+        var prefabManager = FindObjectOfType<AudioPrefabManager>();
+        if (prefabManager == null)
         {
-            Debug.LogError("Ambience UI Prefab is not assigned in UIManager.");
+            Debug.LogError("AudioPrefabManager not found in the scene.");
+            return;
+        }
+
+        if (prefabManager.ambienceUIPrefab == null)
+        {
+            Debug.LogError("Ambience UI Prefab is not assigned in AudioPrefabManager.");
         }
         else
         {
             Debug.Log("Ambience UI Prefab is assigned correctly.");
         }
 
-        if (uiManager.musicUIPrefab == null)
+        if (prefabManager.musicUIPrefab == null)
         {
-            Debug.LogError("Music UI Prefab is not assigned in UIManager.");
+            Debug.LogError("Music UI Prefab is not assigned in AudioPrefabManager.");
         }
         else
         {

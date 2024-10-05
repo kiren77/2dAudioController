@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 using System.Linq;
+using ContextStateGroup;
 
 public class ProjectValidator : EditorWindow
 {
@@ -29,7 +30,7 @@ public class ProjectValidator : EditorWindow
 
     private void ValidateContextStateManager()
     {
-        var contextStateManager = FindObjectOfType<ContextStateGroup.ContextStateManager>();
+        var contextStateManager = FindObjectOfType<ContextStateManager>();
         if (contextStateManager == null)
         {
             Debug.LogError("ContextStateManager instance is missing in the scene.");
@@ -92,32 +93,58 @@ public class ProjectValidator : EditorWindow
     }
 
     private void ValidateAudioUIController()
+{
+    var contextStateManager = FindObjectOfType<ContextStateManager>();
+    if (contextStateManager == null)
+    {
+        Debug.LogError("Cannot validate AudioUIController without ContextStateManager.");
+        return;
+    }
+
+    // Retrieve the current state from the ContextStateManager
+    ContextState currentState = contextStateManager.GetCurrentState();
+
+    switch (currentState)
+    {
+        case ContextState.StateMenu:
+            Debug.Log("StateMenu: No AudioUIController expected.");
+            return;
+
+        // Add similar case checks for other states that do not require AudioUIController
+
+        case ContextState.StateEmo:
+        case ContextState.StateOWI:
+        case ContextState.StateTP:
+            ValidateAudioController("Music Audio UI");
+            ValidateAudioController("Ambience Audio UI");
+            break;
+
+        default:
+            Debug.LogWarning("Unrecognized state for validation.");
+            break;
+    }
+}
+
+
+
+    private void ValidateAudioController(string uiElementName)
     {
         var audioUIControllers = FindObjectsOfType<AudioUIController>();
         if (audioUIControllers == null || audioUIControllers.Length == 0)
         {
-            Debug.LogError("No AudioUIController instances found in the scene.");
+            Debug.LogError($"No AudioUIController instances found for {uiElementName} in the scene.");
             return;
         }
 
         foreach (var audioUIController in audioUIControllers)
         {
-            if (audioUIController.VolumeSlider == null)
+            var uiElement = audioUIController.transform.Find(uiElementName);
+            if (uiElement == null)
             {
-                Debug.LogError("AudioUIController: volumeSlider is not assigned.");
+                Debug.LogError($"{uiElementName} is not found under AudioUIController.");
             }
-
-            if (audioUIController.MuteButton == null)
-            {
-                Debug.LogError("AudioUIController: muteButton is not assigned.");
-            }
-
-            if (audioUIController.UnmuteButton == null)
-            {
-                Debug.LogError("AudioUIController: unmuteButton is not assigned.");
-            }
-
-            Debug.Log("AudioUIController is present and validated.");
         }
+
+        Debug.Log($"{uiElementName} is validated.");
     }
 }

@@ -35,7 +35,25 @@ namespace EmotionSystem
 
     public class EmotionalStateManager : MonoBehaviour
     {
-        public static EmotionalStateManager Instance { get; private set; }
+        private static EmotionalStateManager _instance;
+        public static EmotionalStateManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = FindObjectOfType<EmotionalStateManager>();
+                    if (_instance == null)
+                    {
+                        GameObject go = new GameObject("EmotionalStateManager");
+                        _instance = go.AddComponent<EmotionalStateManager>();
+                        DontDestroyOnLoad(go);
+                    }
+                }
+                return _instance;
+            }
+        }
+
         public EmotionalState CurrentState { get; private set; } = EmotionalState.Neutral;
 
         public event Action<EmotionalState> OnStateChange;
@@ -45,14 +63,14 @@ namespace EmotionSystem
 
         private void Awake()
         {
-            if (Instance != null && Instance != this)
+            if (_instance != null && _instance != this)
             {
                 Destroy(gameObject);
                 return;
             }
 
-            Instance = this;
-            // DontDestroyOnLoad(gameObject); // Optional, if you want this to persist across scenes
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         private void OnEnable()
@@ -60,6 +78,10 @@ namespace EmotionSystem
             if (ContextStateManagerEvents.Instance != null)
             {
                 ContextStateManagerEvents.Instance.OnContextStateChanged += HandleContextStateChange;
+            }
+            else
+            {
+                Debug.LogError("ContextStateManagerEvents.Instance is null in EmotionalStateManager.OnEnable");
             }
         }
 
